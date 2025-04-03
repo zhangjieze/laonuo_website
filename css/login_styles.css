@@ -1,0 +1,77 @@
+body::before {
+    content: url('../img/background_lake.jpg');
+    position: fixed;
+    top: -30%;
+    left: -30%;
+    z-index: -1;
+    display: block;
+    opacity: 0.8;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container, .register-container, .security-container, .reset-password-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.login-container h2, .register-container h2, .security-container h2, .reset-password-container h2 {
+    margin-bottom: 20px;
+}
+
+.login-container input, .register-container input, .security-container input, .security-container textarea, .reset-password-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+.login-container button, .register-container button, .security-container button, .reset-password-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #2980b9;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-container button:hover, .register-container button:hover, .security-container button:hover, .reset-password-container button:hover {
+    background-color: #3498db;
+}
+
+.error-message {
+    color: red;
+    margin: 10px 0;
+    display: none;
+}
+
+.link {
+    color: #007bff;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.button-disabled {
+    background-color: #c0c0c0;
+    cursor: not-allowed;
+}
+
+input.container-input {
+    width: 280px;
+}

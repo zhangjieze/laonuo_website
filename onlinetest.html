@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>在线测试</title>
+    <link rel="stylesheet" type="text/css" href="css/onlinetest_styles.css">
+    <script src="js/onlinetest_scripts.js"></script>
+</head>
+<body>
+    <div class="main-container">
+        <!-- 左侧面板 -->
+        <div class="left-panel">
+            <div class="profile-info">
+                <img class="profile-picture" src="img/Wechat_avatar.jpg" alt="Profile Picture">
+                <p class="profile-name" id="profile_name"></p>
+                <p class="profile-id" id="profile_id"></p>
+                <p class="profile-greeting" id="greeting"></p>
+                <p id="current-time" style="margin-top: 60px;"></p>
+                <p id="countdown-timer"></p>
+            </div>
+            <div class="answer-card">
+                <h3 class="answer-card_title">答题卡</h3>
+                <div id="answer-buttons" class="answer-buttons">
+                    <!-- 自动生成题目按钮 -->
+                </div>
+            </div>
+            <!-- 交卷按钮 -->
+            <div class="submit-section">
+                <button id="submit-btn" onclick="confirmSubmit()">交卷</button>
+            </div>
+        </div>
+
+        <!-- 右侧面板 -->
+        <div class="right-panel">
+            <div class="test-frame" id="test-frame">
+                <form class="test-form" id="test-form" action="#" method="post">
+                    <fieldset>
+                        <!-- <legend>题目</legend> -->
+                        <h4 class="current-question-text" id="current-question-text">1. 题目内容显示区域</h4>
+                        <table class="options-table" id="options-table">
+                            <!-- 自动生成选项 -->
+                        </table>
+                    </fieldset>
+                </form>
+                <div class="question-navigation">
+                    <button id="next-btn" onclick="nextQuestion()">下一题</button>
+                    <button id="prev-btn" onclick="prevQuestion()">上一题</button>
+                    <button id="mark-btn" onclick="markQuestion()">标记本题</button>
+                    <button id="remove-btn" onclick="removeMarkQuestion()">取消标记</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        initializeAnswerCard();
+        setupUserInfo();
+        setGreeting();
+        loadQuestion(0);
+    </script>
+</body>
+</html>

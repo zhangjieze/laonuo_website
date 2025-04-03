@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>个人在线考试系统 - 设置密保问题</title>
+    <link rel = "stylesheet" type = "text/css" href = "css/login_styles.css">
+    <script src="js/login_scripts.js"></script>
+</head>
+<body>
+    <div class="security-container">
+        <h2>设置密保问题</h2>
+        <select id="security-question">
+            <option value="">请选择一个密保问题</option>
+            <option value="你的出生地是哪里？">你的出生地是哪里？</option>
+            <option value="你小学的名字是什么？">你小学的名字是什么？</option>
+            <option value="你的母亲的名字是什么？">你的母亲的名字是什么？</option>
+            <option value="你的宠物名字是什么？">你的宠物名字是什么？</option>
+        </select>
+        <input type="text" class="container-input" id="security-answer" placeholder="答案">
+        <button onclick="setSecurityQuestion()">设置密保问题</button>
+        <div class="error-message" id="error-message">请填写密保问题和答案</div>
+        <script>var userID = getQueryParam('UserID');</script>
+    </div>
+</body>
+</html>

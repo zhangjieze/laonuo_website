@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>个人在线考试系统 - 找回密码</title>
+    <link rel = "stylesheet" type = "text/css" href = "css/login_styles.css">
+    <script src="js/login_scripts.js"></script>
+</head>
+<body> 
+    <div class="security-container">
+        <h2>回答密保问题</h2>
+        <input type="text" class="container-input" id="user-email" placeholder="用户名或电子邮件">
+        <button onclick="getSecurityQuestion()">获取密保问题</button>
+        <div id="security-question-container" style="display:none;">
+            <div id="security-question"></div>
+            <input type="text" class="container-input" id="security-answer" placeholder="请输入答案">
+            <button onclick="verifySecurityAnswer()">提交答案</button>
+        </div>
+        <div class="error-message" id="error-message">请填写所有字段</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>个人在线考试系统 - 注册</title>
+    <link rel = "stylesheet" type = "text/css" href = "css/login_styles.css">
+    <script src="js/login_scripts.js"></script>
+</head>
+<body>
+    <div class="register-container">
+        <h2>注册到个人在线考试系统</h2>
+        <input type="text" class="container-input" id="reg-username" placeholder="用户名">
+        <input type="email" class="container-input" id="reg-email" placeholder="电子邮件">
+        <input type="password" class="container-input" id="reg-password" placeholder="密码">
+        <input type="password" class="container-input" id="reg-confirm-password" placeholder="确认密码">
+        <button onclick="registerUser()">注册</button>
+        <div class="error-message" id="error-message">请填写所有字段</div>
+        <div class="link" onclick="goToLogin()">返回登录</div>
+    </div>
+</body>
+</html>

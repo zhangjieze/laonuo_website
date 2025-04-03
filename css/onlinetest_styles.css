@@ -1,0 +1,193 @@
+/* 背景图片 */
+body::before {
+    content: url('../img/background_lake.jpg');
+    position: fixed;
+    top: -30%;
+    left: -30%;
+    z-index: -1;
+    display: block;
+    opacity: 0.8;
+}
+
+/* 设置页面全局样式 */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 主容器，包含左侧和右侧面板 */
+.main-container {
+    display: flex;
+    width: 80%;
+    height: 90vh;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* 左侧面板，包含用户信息、答题卡、时间等 */
+.left-panel {
+    background-color: #2c3e50;
+    color: white;
+    width: 30%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 用户信息部分 */
+.profile-info {
+    text-align: center;
+}
+
+.profile-picture {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.profile-name, .profile-id, .profile-greeting {
+    margin: 5px 0;
+    font-size: 18px;
+}
+
+/* 答题卡 */
+.answer-card {
+    margin-top: 20px;
+}
+
+.answer-card_title {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.answer-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.answer-buttons button {
+    background-color: #34495e;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.answer-buttons button:hover {
+    background-color: #1abc9c;
+}
+
+.submit-section {
+    position: block;
+    margin-top: 40px;
+    width: 100%;
+    text-align: center;
+}
+
+#submit-btn {
+    padding: 10px 20px;
+    width: 50%;
+    background-color: #34495e;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+#submit-btn:hover {
+    background-color: #1abc9c;
+}
+
+/* 右侧面板，包含题目、导航按钮 */
+.right-panel {
+    width: 70%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.test-frame {
+    flex-grow: 1;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    overflow-y: auto;
+}
+
+.current-question-text {
+    padding: 60px 30px 30px;
+}
+
+.options-table {
+    padding: 30px 30px 80px;
+}
+
+.test_question_des {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+/* 题目容器 */
+#questions-container {
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.question-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.question-navigation button {
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.question-navigation button:hover {
+    background-color: #3498db;
+}
+
+/* 标记样式 */
+.answer-buttons button.marked, .answer-buttons button.marked.answered {
+    background-color: #f39c12;
+}
+
+.answer-buttons button.marked:hover {
+    background-color: #f1c40f;
+}
+
+/* 状态样式 */
+.answer-buttons button.answered{
+    background-color: #1abc9c;
+}
+
+.time-danger {
+    color: red;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>考试须知</title>
+    <link rel = "stylesheet" type = "text/css" href = "css/requirement_styles.css">
+    <script src="js/onlinetest_scripts.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <h1>2023年普通高等学校招生全国统一考试(新课标I卷) 数学</h1>
+        <h2>考试须知</h2>
+        <div class="notice-box">
+            <p>请仔细阅读以下须知内容，考试开始后请遵守相关规定。</p>
+            <p>1. 本次测试为往年试卷节选，保证可以在网页端输入正确答案</p>
+            <p>2. 本次测试共8道题，满分40分，测试时间为30分钟。</p>
+            <p>3. 考试时间结束后，系统将自动提交试卷，请合理安排时间。</p>
+            <p>4. 请在答题时仔细检查，不要遗漏或选错答案。</p>
+            <p>5. 测试过程中，请勿刷新或关闭页面，否则会导致作答信息丢失。</p>
+        </div>
+        <button id="startButton" disabled>请稍候...</button>
+    </div>
+
+    <script>
+    startCountdown();
+    const userName = getQueryParam('Username');
+    const userID = getQueryParam('UserID');
+    </script>
+</body>
+</html>

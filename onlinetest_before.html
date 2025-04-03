@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang = "zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Online Test</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/aboutme-style.css">
+    <link rel="stylesheet" type="text/css" href="css/onlinetest_before.css">
+    <script src = "js/javascript.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=AM_HTMLorMML-full"></script>
+</head>
+<body>
+    <!-- <script>
+        window.onload = function()
+        {
+            alert("欢迎来到在线考试系统！你有30分钟的作答时间。");
+        };
+    </script> -->
+    <div class = "header">
+            <a href = "index.html"><img class = "arrow_back alignleft" src = "img/arrow_back.png" alt = "Back" width = "35" height = "35"></a>
+            <p class = "title alignleft">在线考试系统</p>
+            <img class = "avatar alignright" src = "img/Wechat_avatar.jpg" alt = "My Avatar" width = "50" height = "50">
+            <span class = "title_name alignright">左逸龙</span>
+    </div>
+    <div class = "row">
+        <div class = "column side">
+            <p>&nbsp;</p>
+            <div class="profile-info">
+                <img class = "profile-picture" src="img/Wechat_avatar.jpg" alt="Profile Picture">
+                <p class = "profile-name">姓名:左逸龙</p>
+                <p class = "profile-id">学号:1120231863</p>
+                <p class = "profile-greeting" id="greeting"></p>
+            </div>
+        </div>
+        <div class = "column middle">
+            <div class = "content test">
+                <h3 class = "test_title" style = "padding-top: 50px;">2023年普通高等学校招生全国统一考试(新课标I卷)</h3>
+                <h3 class = "test_title">(适用地区:山东、河北、湖南、湖北、江苏、广东、福建、浙江)</h3>
+                <h3 class = "test_title">数学(节选)</h3>
+                <h4 class = "test_des">本试卷共6页，22 小题，满分 150 分.考试用时 120 分钟.</h4>
+                <h4 class = "test_des">注意事项：1.答卷前，考生务必将自己的姓名、考生号、考场号和座位号填写在答题卡上。用 2B 铅笔将试卷类型(B)填涂在答题卡相应位置上.将条形码横贴在答题卡右上角“条形码粘贴处”.</h4>
+                <h4 class = "test_des">2.作答选择题时，选出每小题答案后，用 2B 铅笔在答题卡上对应题目选项的答案信息点涂黑；如需改动，用橡皮擦干净后，再选涂其他答案，答案不能答在试卷上.</h4>
+                <h4 class = "test_des">3.非选择题必须用黑色字迹的钢笔或签字笔作答，答案必须写在答题卡各题目指定区域内相应位置上；如需改动，先划掉原来的答案，然后再写上新答案：不准使用铅笔和涂改液.不按以上要求作答无效.</h4>
+                <h4 class = "test_des">4.考生必须保持答题卡的整洁.考试结束后，将试卷和答题卡一并交回.</h4>
+                <form id = "form1" action = "\" method = "post" class = "options">
+                <fieldset>
+                    <legend>一、单选题:</legend>
+                    <h4 class = "test_question_des">本题共 4 小题,每小题 5 分,共 20 分.在每小题给出的四个选项中,只有一项是符合题目要求的.</h4>
+                    <h5 class = "test_question" id = "1">1.已知集合`M={-2,-1,0,1,2}`,`N={x|x^2-x-6≥0}`,则`M∩N`=</h5>
+                        <table>
+                            <tr>
+                                <td class = "options_in_one_line"><label for = "1-a"><input type = "radio" id = "1-a" name = "question1" value = "A">`A. {-2,-1,0,1}`</label></td>
+                                <td class = "options_in_one_line"><label for = "1-b"><input type = "radio" id = "1-b" name = "question1" value = "B">`B. {0,1,2}`</label></td>
+                                <td class = "options_in_one_line"><label for = "1-c"><input type = "radio" id = "1-c" name = "question1" value = "C">`C. {-2}`</label></td>
+                                <td class = "options_in_one_line"><label for = "1-d"><input type = "radio" id = "1-d" name = "question1" value = "D">`D. 2`</label></td>
+                            </tr>
+                        </table>
+                    <h5 class = "test_question" id = "2">2.已知`z=\frac{1-i}{2+2i}`,则`z-\overlinez=`</h5>
+                        <table>
+                            <tr>
+                                <td class = "options_in_one_line"><label for = "2-a"><input type = "radio" id = "2-a" name = "question2" value = "A">`A. -i`</label></td>
+                                <td class = "options_in_one_line"><label for = "2-b"><input type = "radio" id = "2-b" name = "question2" value = "B">`B. i`</label></td>
+                                <td class = "options_in_one_line"><label for = "2-c"><input type = "radio" id = "2-c" name = "question2" value = "C">`C. 0`</label></td>
+                                <td class = "options_in_one_line"><label for = "2-d"><input type = "radio" id = "2-d" name = "question2" value = "D">`D. 1`</label></td>
+                            </tr>
+                        </table>
+                    <h5 class = "test_question" id = "3">3.已知向量`a=(1,1)`,`b=(1,-1)`,若`(a+λb)⊥(a+μb)`,则</h5>
+                        <table>
+                            <tr>
+                                <td class = "options_in_one_line"><label for = "3-a"><input type = "radio" id = "3-a" name = "question3" value = "A">`A. λ+μ=1`</label></td>
+                                <td class = "options_in_one_line"><label for = "3-b"><input type = "radio" id = "3-b" name = "question3" value = "B">`B. λ+μ=-1`</label></td>
+                                <td class = "options_in_one_line"><label for = "3-c"><input type = "radio" id = "3-c" name = "question3" value = "C">`C. λμ=1`</label></td>
+                                <td class = "options_in_one_line"><label for = "3-d"><input type = "radio" id = "3-d" name = "question3" value = "D">`D. λμ=-1`</label></td>
+                            </tr>
+                        </table>
+                    <h5 class = "test_question" id = "4">4.设函数`f(x)=2^{x(x-a)}`在区间`(0,1)`上单调递减,则`a`的取值范围是</h5>
+                        <table>
+                            <tr>
+                                <td class = "options_in_one_line"><label for = "4-a"><input type = "radio" id = "4-a" name = "question4" value = "A">`A. (-\infty,-2]`</label></td>
+                                <td class = "options_in_one_line"><label for = "4-b"><input type = "radio" id = "4-b" name = "question4" value = "B">`B. [-2,0)`</label></td>
+                                <td class = "options_in_one_line"><label for = "4-c"><input type = "radio" id = "4-c" name = "question4" value = "C">`C. (0,2]`</label></td>
+                                <td class = "options_in_one_line"><label for = "4-d"><input type = "radio" id = "4-d" name = "question4" value = "D">`D. [2,+\infty)`</label></td>
+                            </tr>
+                        </table>
+                </fieldset>
+                </form>
+                <form id = "form2" action = "\" method = "post" class = "options">
+                <fieldset>
+                    <legend>二、多选题:</legend>
+                    <h4 class = "test_question_des">本题共 2 小题,每小题 5 分,共 20 分. 在每小题给出的选项中,有多项符合题目要求. 全部选对的得 5 分,部分选对的得 2 分,有选错的得 0 分.</h4>
+                    <h5 class = "test_question" id = "5">5.已知函数`f(x)`的定义域为`R`,`f(xy)=y^2f(x)+x^2f(y)`,则</h5>
+                        <table>
+                            <tr>
+                                <td class = "options_in_two_lines"><label for = "5-a"><input type = "checkbox" id = "5-a" name = "question5" value = "A">`A. f(0)=0`</label></td>
+                                <td class = "options_in_two_lines"><label for = "5-b"><input type = "checkbox" id = "5-b" name = "question5" value = "B">`B. f(1)=0`</label></td>
+                            </tr>
+                            <tr>
+                                <td class = "options_in_two_lines"><label for = "5-c"><input type = "checkbox" id = "5-c" name = "question5" value = "C">`C. f(x)是偶函数`</label></td>
+                                <td class = "options_in_two_lines"><label for = "5-d"><input type = "checkbox" id = "5-d" name = "question5" value = "D">`D. x=0为f(x)的极小值点`</label></td>
+                            </tr>
+                        </table>
+                    <h5 class = "test_question" id = "6">6.下列物体中能够被整体放入棱长为1(单位m)的正方体容器(容器壁厚度忽略不计)内的有</h5>
+                        <table>
+                            <tr>
+                                <td class = "options_in_four_lines"><label for = "6-a"><input type = "checkbox" id = "6-a" name = "question6" value = "A">`A. 直径为 0.99m 的球体`</label></td>
+                            </tr>
+                            <tr>
+                                <td class = "options_in_four_lines"><label for = "6-b"><input type = "checkbox" id = "6-b" name = "question6" value = "B">`B. 所有棱长均为 1.4m 的四面体`</label></td>
+                            </tr>
+                            <tr>
+                                <td class = "options_in_four_lines"><label for = "6-c"><input type = "checkbox" id = "6-c" name = "question6" value = "C">`C. 底面直径为 0.01m,高为 1.8m 的圆柱体`</label></td>
+                            </tr>
+                            <tr>
+                                <td class = "options_in_four_lines"><label for = "6-d"><input type = "checkbox" id = "6-d" name = "question6" value = "D">`D. 底面直径为 1.2m,高为 0.01m 的圆柱体`</label></td>
+                            </tr>
+                        </table>
+                </fieldset>
+                </form>
+                <form id = "form3" action = "\" method = "post" class = "options">
+                <fieldset>
+                    <legend>三、填空题:</legend>
+                    <h4 class = "test_question_des">本题共 2 小题,每小题 5 分,共 10 分.</h4>
+                    <h5 class = "test_question" id = "7">7.某学校开设了4门体育类选修课和4门艺术类选修课,学生需从这8门课中选修2门或3门课,并且每类选修课至少选修1门,则不同的选课方案共有____种(用数字作答).</h5>
+                    <input type = "text" id = "question7" name = "question7" size = "50">
+                    <h5 class = "test_question" id = "8">8.已知函数`f(x)=cosωx-l(ω\gt0)`在区间`[0,2π]`有且仅有3个零点,则`ω`的取值范围是</h5>
+                    <input type = "text" id = "question8" name = "question8" size = "50">
+                </fieldset>
+                </form>
+                <input type = "submit" value = "提交" class = "submit_button" onclick = "submitAllForms()">
+                <p>&nbsp;</p>
+            </div>
+        </div>
+        <div class = "column side">
+            <div id="answer-card" class="answer-card">
+                <h3 class = "answer-card_title">答题卡</h3>
+                <hr>
+                <table>
+                    <tr>
+                        <td class = "answer-card_question"><a href="#1" id="q1">1</a></td>
+                        <td class = "answer-card_question"><a href="#2" id="q2">2</a></td>
+                        <td class = "answer-card_question"><a href="#3" id="q3">3</a></td>
+                        <td class = "answer-card_question"><a href="#4" id="q4">4</a></td>
+                    </tr>
+                    <tr>
+                        <td class = "answer-card_question"><a href="#5" id="q5">5</a></td>
+                        <td class = "answer-card_question"><a href="#6" id="q6">6</a></td>
+                        <td class = "answer-card_question"><a href="#7" id="q7">7</a></td>
+                        <td class = "answer-card_question"><a href="#8" id="q8">8</a></td>
+                    </tr>
+                    <tr>
+                        <td colspan = "2"><img class = "reset_arrow" src = "img/reset.png" alt="Reset All Answers" id="reset-all" onclick="resetAllAnswers()" /></td>
+                        <td colspan = "2" class = "reset_des">点击重置答案</td>
+                    </tr>
+                </table>
+                <hr>
+                <table>
+                    <tr>
+                        <td rowspan = "2"><img class = "clock" src = "img/clock.jfif" alt="Time Remaining" /></td>
+                        <td colspan = "3"><p id="current-time"></p></td>
+                    </tr>
+                    <tr>
+                        <td colspan = "3"><p id="countdown-timer"></p></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class = "footer">
+        <p>建议使用Chrome或IE9以上浏览器访问。本网页HTML5和CSS3验证通过
+            <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:0;width:44px;height:15px;"
+                    src="http://jigsaw.w3.org/css-validator/images/vcss"
+                    alt="Valid CSS!" />
+            </a>
+        </p>
+        <p>Designed and developed by laonuo</p>
+    </div>
+</body>
+</html>
